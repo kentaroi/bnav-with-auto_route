@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:auto_route/annotations.dart';
 
+@RoutePage(name: 'SettingsRouter')
 class SettingsPage extends StatelessWidget {
   const SettingsPage({Key? key}) : super(key: key);
 

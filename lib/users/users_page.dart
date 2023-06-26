@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:bnav/data/app_data.dart';
 import 'package:bnav/widgets.dart';
+import 'package:bnav/routes/router.gr.dart';
 
+@RoutePage(name: 'UsersRouter')
+class UsersRouterPage extends AutoRouter {}
+
+@RoutePage()
 class UsersPage extends StatelessWidget {
   const UsersPage({Key? key}) : super(key: key);
 
@@ -16,7 +22,11 @@ class UsersPage extends StatelessWidget {
             UserAvatar(
               avatarColor: users[i].color,
               username: 'user${users[i].id}',
-              onAvatarTap: () {},
+              onAvatarTap: () => context.router.push(
+                UserProfileRoute(
+                  userId: users[i].id,
+                ),
+              ),
             ),
         ],
       ),

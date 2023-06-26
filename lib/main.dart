@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:bnav/posts/posts_page.dart';
+import 'package:auto_route/auto_route.dart';
+import 'package:bnav/routes/router.dart';
 
 void main() => runApp(const AppWidget());
 
@@ -8,10 +9,12 @@ class AppWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    final _appRouter = AppRouter();
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Bottom Nav Bar with Nested Routing',
-      home: PostsPage(),
+      routerDelegate: _appRouter.delegate(),
+      routeInformationParser: _appRouter.defaultRouteParser(),
     );
   }
 }
