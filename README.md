@@ -1,16 +1,17 @@
-# bnav
+# bnav-with-auto_route
 
-A new Flutter project.
+This is an update sample code for the following tutorial:
+
+https://resocoder.com/2021/09/16/flutter-bottom-navigation-with-nested-routing/
+
+https://youtu.be/9oH42_Axr3Q
+
+The Reso Coder's official repo is [here](https://github.com/ResoCoder/flutter-bottom-navigation-with-nested-routing-tutorial).
+
+I am a Flutter newbie and have nothing to do with Reso Coder.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+The main branch is the finished project.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+If you'd like to start from the starter project, checkout the [start](https://github.com/kentaroi/bnav-with-auto_route/tree/start) branch.
